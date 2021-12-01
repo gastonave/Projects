@@ -78,6 +78,10 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border: none;
+	background-color: transparent;
+	width: 350px;
+	cursor: pointer;
 }
 
 .question h2 {
