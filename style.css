@@ -14,6 +14,7 @@ body {
 	height: 100vh;
 	font-family: 'KumbhSans', sans-serif;
 	font-weight: 400;
+	font-size: 12px;
 }
 
 .main {
@@ -39,7 +40,7 @@ body {
 	width: 950px;
 	height: auto;
 	position: absolute;
-	bottom: -130px;
+	bottom: -150px;
 	left: -540px;
 	
 }
@@ -54,8 +55,8 @@ body {
 
 .cube {
 	position: absolute;
-	left: 405px;
-	top: 470px;
+	left: 380px;
+	top: 475px;
 	width: 150px;
 	z-index: 2;
 }
@@ -63,10 +64,12 @@ body {
 h1 {
 	font-family: 'KumbhSans', sans-serif;
 	font-weight: 700;
+	font-size: 36px;
+	padding-bottom: 20px;
 }
 
 .faq {
-	width: 350px;
+	width: 300px;
 	margin-top: 25px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid hsl(240, 5%, 91%);
@@ -79,7 +82,7 @@ h1 {
 	align-items: center;
 	border: none;
 	background-color: transparent;
-	width: 350px;
+	width: 300px;
 	cursor: pointer;
 }
 
@@ -92,7 +95,7 @@ h1 {
 .answer {
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 1.4s ease;
+	transition: max-height .6s ease-in-out;
 }
 .answer p {
 	padding-top: 15px;
@@ -100,7 +103,25 @@ h1 {
 	font-size: 12px;
 }
 
+.faq img {
+	transition: transform .6s ease-in-out;
+}
+
 .faq.active .answer {
 	max-height: 200px;
 }
+
+.faq.active img {
+	transform: rotate(180deg);
+}
+
+.faq.active h2 {
+	font-weight: 700;
+}
+
+button h2:hover {
+	color: hsl(14, 88%, 65%);
+}
+
+
 
